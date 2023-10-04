@@ -72,7 +72,7 @@ public class SimpleCalculator {
     private void onOperatorButtonClicked(String newOperator) {
         if (isTypingNumber) {
             double secondOperand = Double.parseDouble(display.getText());
-            switch (operator) {
+            switch (newOperator) {
                 case "+":
                     firstOperand += secondOperand;
                     break;
